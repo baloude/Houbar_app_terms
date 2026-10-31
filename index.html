@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zásady ochrany osobních údajů – Houbař</title>
+<meta name="description" content="Jaké osobní údaje zpracovává mobilní aplikace Houbař, proč, komu je předává a jak je můžeš smazat.">
+<meta name="robots" content="index, follow">
+<style>
+  :root { color-scheme: light dark; --fg:#1d2a1f; --muted:#5b6b5e; --bg:#fbfaf6; --panel:#f0efe6; --line:#d9d8cc; --accent:#2d6a3e; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --fg:#e9efe9; --muted:#aab7ac; --bg:#14201a; --panel:#1e2c25; --line:#34443b; --accent:#7fc596; } }
+  :root[data-theme="dark"] { --fg:#e9efe9; --muted:#aab7ac; --bg:#14201a; --panel:#1e2c25; --line:#34443b; --accent:#7fc596; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 820px; margin: 0 auto; padding: 24px 16px 64px; }
+  h1 { font-size: 1.9rem; line-height:1.2; color: var(--accent); margin-bottom:.25rem; }
+  h2 { font-size: 1.3rem; line-height:1.3; margin-top: 2.25rem; color: var(--accent); scroll-margin-top: 16px; }
+  h3 { font-size: 1.05rem; margin-top: 1.4rem; }
+  a { color: var(--accent); }
+  ul { padding-left: 1.2rem; }
+  li { margin: .3rem 0; }
+  .date { color: var(--muted); margin-top:0; }
+  .box { background: var(--panel); border-radius: 10px; padding: 12px 16px; margin: 1rem 0; }
+  .box h2 { margin-top:.25rem; }
+  .delete-link { display:inline-block; font-weight:600; }
+  .toc { columns: 2; column-gap: 24px; padding-left: 1.4rem; }
+  .table-wrap { overflow-x: auto; margin: 1rem 0; }
+  table { border-collapse: collapse; width: 100%; min-width: 640px; font-size: .92rem; }
+  th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: var(--panel); }
+  @media (max-width: 560px) { .toc { columns: 1; } h1 { font-size: 1.6rem; } }
+</style>
+</head>
+<body>
+<main>
+<h1>Zásady ochrany osobních údajů</h1>
+<p class="date">Mobilní aplikace Houbař. Účinné od 31. října 2026.</p>
+<p class="delete-link"><a href="#smazani-uctu">Chci smazat účet a svoje údaje</a></p>
+
+<section class="box">
+<h2>Stručně</h2>
+<ul>
+<li>Přesná poloha nálezu a deník nálezů zůstávají jen v tvém telefonu.</li>
+<li>Na server se posílá jen oblast o velikosti zhruba 36 km², nikdy souřadnice.</li>
+<li>Ostatní vidí jen to, co sám sdílíš, a souhrny za oblast. Tvoje jednotlivá hlášení neuvidí.</li>
+<li>Fotky pro Poznávač zpracujeme jen s tvým souhlasem a slouží i ke zlepšování rozpoznávání hub.</li>
+<li>Osobní údaje neprodáváme. Aplikace nepoužívá analytické nástroje.</li>
+<li>Běžným uživatelům může aplikace zobrazovat reklamy od Googlu. Personalizované jsou jen s tvým souhlasem.</li>
+</ul>
+<p>Toto je jen shrnutí. Úplné informace najdeš níže.</p>
+</section>
+
+<nav aria-label="Obsah">
+<ol class="toc">
+<li><a href="#spravce">Kdo je správce</a></li>
+<li><a href="#udaje">Jaké údaje zpracováváme</a></li>
+<li><a href="#poloha">Poloha</a></li>
+<li><a href="#fotky">Fotky a Poznávač</a></li>
+<li><a href="#viditelnost">Co vidí ostatní</a></li>
+<li><a href="#telefon">Co zůstává jen v telefonu</a></li>
+<li><a href="#reklamy">Reklamy</a></li>
+<li><a href="#opravneni">Oprávnění telefonu</a></li>
+<li><a href="#prijemci">Komu údaje předáváme</a></li>
+<li><a href="#mimo-eu">Předávání mimo EU</a></li>
+<li><a href="#uchovavani">Jak dlouho údaje uchováváme</a></li>
+<li><a href="#smazani-uctu">Smazání účtu a dat</a></li>
+<li><a href="#prava">Tvoje práva</a></li>
+<li><a href="#zabezpeceni">Zabezpečení</a></li>
+<li><a href="#deti">Věková hranice</a></li>
+<li><a href="#automaticky">Automatizované zpracování</a></li>
+<li><a href="#zmeny">Změny zásad</a></li>
+</ol>
+</nav>
+
+<h2 id="spravce">1. Kdo je správce</h2>
+<p>Správcem osobních údajů je <strong>Denis Baloun</strong>, provozovatel aplikace Houbař (dále „my“). Ve všech otázkách k osobním údajům nás kontaktuj na <a href="mailto:houbarapp@seznam.cz">houbarapp@seznam.cz</a>. Pověřence pro ochranu osobních údajů jsme nejmenovali.</p>
+<p>Tyto zásady platí pro mobilní aplikaci Houbař pro Android a iOS. Vysvětlují, jak zpracováváme osobní údaje podle nařízení (EU) 2016/679 (GDPR).</p>
+
+<h2 id="udaje">2. Jaké údaje zpracováváme, proč a na jakém základě</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Údaje</th><th>Účel</th><th>Právní základ</th></tr></thead>
+<tbody>
+<tr><td><strong>Účet:</strong> e-mail nebo přihlašovací jméno, otisk hesla. Při přihlášení přes Google nebo Apple e-mail a identifikátor účtu. Host bez registrace má anonymní účet bez e-mailu.</td><td>Přihlášení, obnova hesla, přenos dat mezi zařízeními.</td><td>Plnění smlouvy, čl. 6 odst. 1 písm. b) GDPR</td></tr>
+<tr><td><strong>Profil:</strong> přezdívka, avatar nebo vlastní profilová fotka, barva, pozadí, úroveň, nastavení viditelnosti.</td><td>Vystupování v komunitě a v žebříčku.</td><td>Plnění smlouvy</td></tr>
+<tr><td><strong>Hlášení z lesa:</strong> oblast zhruba 36 km², den, stav (rostlo, slabě, nerostlo).</td><td>Komunitní přehled růstu hub.</td><td>Plnění smlouvy</td></tr>
+<tr><td><strong>Houbaři kolem mě:</strong> oblast zhruba 36 km² a čas posledního signálu.</td><td>Zobrazení počtu houbařů v oblasti a upozornění.</td><td>Souhlas, čl. 6 odst. 1 písm. a) GDPR</td></tr>
+<tr><td><strong>Komunita:</strong> příspěvky, fotky, komentáře, reakce, dotazy, odpovědi, recepty, oblast autora příspěvku.</td><td>Sdílení s ostatními uživateli.</td><td>Plnění smlouvy</td></tr>
+<tr><td><strong>Body a aktivita:</strong> body, odznaky, výsledky kvízů, viděné druhy, stav předplatného Houbař+.</td><td>Herní prvky, žebříček, odemčení funkcí.</td><td>Plnění smlouvy</td></tr>
+<tr><td><strong>Poznávač a sbírka fotek:</strong> fotky, výsledky, tvoje hodnocení návrhů, číselný otisk fotky (embedding) a záznam o souhlasu (čas, verze aplikace, otisk znění).</td><td>Orientační tip druhu a zlepšování rozpoznávání hub.</td><td>Souhlas</td></tr>
+<tr><td><strong>Upozornění:</strong> token zařízení pro push upozornění.</td><td>Doručení upozornění, která jsi povolil.</td><td>Souhlas</td></tr>
+<tr><td><strong>Bezpečnost a moderace:</strong> počty použití funkcí, nahlášení, blokování, záznamy zásahů správce, žádosti o změnu přezdívky.</td><td>Ochrana před zneužitím, kontrola nákladů, vymáhání pravidel komunity.</td><td>Oprávněný zájem na bezpečném provozu, čl. 6 odst. 1 písm. f) GDPR</td></tr>
+<tr><td><strong>Provozní údaje:</strong> IP adresa, typ zařízení, verze aplikace a čas požadavku v technických záznamech poskytovatelů.</td><td>Provoz, řešení chyb, bezpečnost.</td><td>Oprávněný zájem</td></tr>
+<tr><td><strong>Reklamní údaje:</strong> reklamní identifikátor, údaje o zobrazení reklamy a o souhlasu.</td><td>Zobrazení a měření reklam.</td><td>Souhlas tam, kde se vyžaduje; jinak oprávněný zájem na financování aplikace</td></tr>
+<tr><td><strong>Komunikace:</strong> tvůj e-mail a obsah zprávy, když nám napíšeš.</td><td>Vyřízení žádosti.</td><td>Oprávněný zájem; u žádostí podle GDPR plnění právní povinnosti, čl. 6 odst. 1 písm. c) GDPR</td></tr>
+</tbody>
+</table>
+</div>
+<p>Poskytnutí údajů není zákonný požadavek. Bez údajů nezbytných pro danou funkci ji ale nebude možné používat. Funkce založené na souhlasu jsou dobrovolné.</p>
+
+<h2 id="poloha">3. Poloha</h2>
+<p>Polohu v telefonu používáme k určení tvé oblasti, ke zobrazení mapy a k uložení bodu do deníku, pokud o to požádáš. Oblast je šestiúhelník systému H3 (rozlišení 6) o průměrné ploše zhruba 36 km². Souřadnice z telefonu na náš server neposíláme.</p>
+<ul>
+<li><strong>Hlášení:</strong> odešle se oblast, den a stav. Ostatním se ukazuje jen souhrn oblasti od více lidí.</li>
+<li><strong>Houbaři kolem mě:</strong> pokud funkci zapneš, aplikace posílá oblast a čas signálu. Na serveru je jeden záznam na účet a záznamy starší 3 hodin se průběžně mažou. Ostatním se ukáže jen počet houbařů, a to až od dvou lidí. Polohu jednotlivce nikdo nevidí.</li>
+<li><strong>Poloha na pozadí:</strong> jen pokud povolíš polohu „Vždy“, aplikace posílá oblast i tehdy, když je zavřená, zhruba každých 8 minut nebo po přesunu o 1 km. Slouží to pouze funkci Houbaři kolem mě. Polohu z telefonu reklamní službě nepředáváme. Google si ale může přibližnou polohu odvodit z IP adresy.</li>
+<li><strong>Vypnutí:</strong> funkci vypneš v Profilu, záznam na serveru se tím hned smaže. Oprávnění k poloze můžeš kdykoli odebrat v nastavení telefonu.</li>
+</ul>
+
+<h2 id="fotky">4. Fotky a Poznávač</h2>
+<ul>
+<li>Před odesláním se každá fotka zmenší a znovu uloží bez metadat, tedy i bez GPS polohy.</li>
+<li>Do Poznávače můžeš poslat nejvýš 3 fotky najednou. Před použitím potvrzuješ souhlas.</li>
+<li>Fotky se zpracují v modelu pro rozpoznávání hub na našem serveru v Německu. Na tomto serveru se neukládají.</li>
+<li>Fotky z Poznávače a fotky pro Atlas ukládáme do soukromé sbírky. Vidí je správce, který je třídí podle druhů, a slouží ke zlepšování rozpoznávání. Ostatním uživatelům se nezobrazují.</li>
+<li>Fotky do Sbírky hub kontroluje správce. Fotka schváleného nálezu se může ukázat na tvém profilu ostatním přihlášeným uživatelům.</li>
+<li>Souhlas můžeš kdykoli odvolat. Smazání fotek ze sbírky vyžádáš přímo v Poznávači nebo e-mailem. Odvolání nemá vliv na zpracování před ním.</li>
+</ul>
+
+<h2 id="viditelnost">5. Co vidí ostatní uživatelé</h2>
+<ul>
+<li>Přezdívku, avatar, barvu a úroveň u tvých příspěvků, komentářů a v žebříčku. Vlastní profilová fotka je uložená veřejně a dá se zobrazit přes svou internetovou adresu.</li>
+<li>Tvůj veřejný profil: přehled aktivity, odznaky a schválené nálezy podle tvého nastavení.</li>
+<li>Příspěvky, komentáře, reakce, dotazy a odpovědi. Z oblasti autora se u příspěvku ukáže nejvýš kraj.</li>
+<li>Recepty až po schválení správcem.</li>
+</ul>
+<p>Veřejně sdílený obsah si mohou ostatní prohlédnout a uložit, proto do něj nedávej cizí ani citlivé osobní údaje.</p>
+
+<h2 id="telefon">6. Co zůstává jen v telefonu</h2>
+<p>Přesná poloha nálezu, deník nálezů, poznámky a fotky z deníku se ukládají jen v tvém telefonu. Neposíláme je na server ani třetím stranám a nemáme k nim přístup. Automatická záloha dat aplikace do účtu Google je vypnutá. Pokud aplikaci odinstaluješ bez exportu deníku do souboru, tato data zmizí. Seznam oblastí, které jsi ten den navštívil, zůstává také jen v telefonu.</p>
+
+<h2 id="reklamy">7. Reklamy</h2>
+<p>Běžným uživatelům může aplikace zobrazovat reklamy prostřednictvím služby Google AdMob. Předplatitelé Houbař+ reklamy nevidí. Data sdílíme s Googlem a jeho reklamními partnery, kteří mohou používat reklamní identifikátor a údaje o zařízení a o zobrazení reklamy.</p>
+<p>V Evropském hospodářském prostoru se tě nejprve zeptáme na souhlas přes formulář Google. Personalizované reklamy zobrazíme jen s tvým souhlasem. Bez něj se reklama nenačte, nebo může jít o reklamu bez personalizace. Reklamní identifikátor můžeš smazat nebo obnovit v nastavení telefonu. Více: <a href="https://business.safety.google/privacy/">jak Google nakládá s údaji</a> a <a href="https://policies.google.com/technologies/partner-sites">jak Google používá informace z aplikací svých partnerů</a>.</p>
+
+<h2 id="opravneni">8. Oprávnění telefonu</h2>
+<ul>
+<li><strong>Poloha při používání:</strong> oblast pro hlášení, mapa, Houbaři kolem mě, bod v deníku.</li>
+<li><strong>Poloha na pozadí („Vždy“):</strong> volitelné, jen pro Houbaře kolem mě.</li>
+<li><strong>Fotoaparát:</strong> focení nálezů a fotky pro Poznávač.</li>
+<li><strong>Výběr fotek:</strong> jen fotky, které sám vybereš.</li>
+<li><strong>Oznámení:</strong> volitelná upozornění.</li>
+<li><strong>Internet a stav sítě:</strong> spojení se serverem a práce bez připojení.</li>
+<li><strong>Reklamní identifikátor:</strong> reklamy podle části 7.</li>
+</ul>
+
+<h2 id="prijemci">9. Komu údaje předáváme</h2>
+<p>Osobní údaje neprodáváme. Předáváme je jen v rozsahu potřebném pro provoz aplikace. Zpracovatelé pracují podle našich pokynů, samostatní správci rozhodují o údajích podle vlastních zásad.</p>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Příjemce</th><th>Úloha</th><th>Údaje</th><th>Sídlo a místo zpracování</th></tr></thead>
+<tbody>
+<tr><td><a href="https://supabase.com/privacy">Supabase</a></td><td>Zpracovatel: databáze, přihlášení, úložiště, serverové funkce</td><td>Údaje účtu a obsah uložený na serveru</td><td>Hlavní umístění dat v Irsku (AWS eu-west-1), viz část 10</td></tr>
+<tr><td><a href="https://www.hetzner.com/legal/privacy-policy/">Hetzner Online GmbH</a></td><td>Zpracovatel: server s modelem pro rozpoznávání hub</td><td>Fotky posílané k rozpoznání</td><td>Německo</td></tr>
+<tr><td><a href="https://expo.dev/privacy">Expo (650 Industries, Inc.)</a></td><td>Zpracovatel: doručení upozornění a aktualizace aplikace</td><td>Push token, text upozornění, IP adresa, verze aplikace</td><td>USA</td></tr>
+<tr><td><a href="https://policies.google.com/privacy">Google</a></td><td>Samostatný správce: Google Maps, přihlášení přes Google, reklamy AdMob, doručování upozornění, obchod Google Play</td><td>Podle služby: technické údaje zařízení, IP adresa, oblast zobrazené mapy, identifikátory, údaje o nákupu</td><td>Irsko a USA</td></tr>
+<tr><td><a href="https://www.apple.com/legal/privacy/">Apple</a></td><td>Samostatný správce: přihlášení přes Apple, doručování upozornění, App Store</td><td>Identifikátory, technické údaje, údaje o nákupu</td><td>Irsko a USA</td></tr>
+<tr><td><a href="https://open-meteo.com/en/terms">OpenMeteo GmbH</a></td><td>Samostatný správce: předpověď počasí</td><td>IP adresa a dotaz na pevné body krajů, ne tvoje poloha</td><td>Švýcarsko, servery v Evropě a Severní Americe</td></tr>
+<tr><td>Český hydrometeorologický ústav</td><td>Samostatný správce: mapa pravděpodobnosti růstu hub</td><td>IP adresa a technické údaje požadavku</td><td>Česká republika</td></tr>
+</tbody>
+</table>
+</div>
+<p>Aplikace používá Google Maps. Na zobrazení mapy se vztahují <a href="https://policies.google.com/privacy">Zásady ochrany soukromí Google</a>. Údaje můžeme předat také orgánům veřejné moci, pokud to vyžaduje zákon, nebo je to nutné k ochraně práv a bezpečnosti.</p>
+
+<h2 id="mimo-eu">10. Předávání mimo EU</h2>
+<p>Pokud se údaje dostanou mimo Evropský hospodářský prostor, děje se tak na těchto základech:</p>
+<ul>
+<li><strong>Google a Expo:</strong> rámec EU-US Data Privacy Framework, u poskytovatelů, kteří jsou v něm certifikovaní, a standardní smluvní doložky podle jejich podmínek.</li>
+<li><strong>Supabase:</strong> standardní smluvní doložky v jeho smlouvě o zpracování údajů. Databáze je v Irsku, ale poskytovatel může v omezeném rozsahu zpracovávat některé údaje mimo tento region, například při podpoře, a to i v Singapuru a USA.</li>
+<li><strong>Švýcarsko:</strong> rozhodnutí Evropské komise o odpovídající ochraně.</li>
+</ul>
+<p>Kopii použitých záruk si můžeš vyžádat na <a href="mailto:houbarapp@seznam.cz">houbarapp@seznam.cz</a>.</p>
+
+<h2 id="uchovavani">11. Jak dlouho údaje uchováváme</h2>
+<ul>
+<li>Údaje navázané na účet uchováváme po dobu existence účtu, nebo dokud je nesmažeš.</li>
+<li>Záznam funkce Houbaři kolem mě mažeme průběžně po 3 hodinách od posledního signálu, případně hned po vypnutí funkce.</li>
+<li>Fotky ve sbírce a údaje založené na souhlasu uchováváme do odvolání souhlasu a vyřízení žádosti o smazání, nebo do smazání účtu.</li>
+<li>Po smazání účtu mizí jeho data z provozní databáze a úložiště. Kopie v zálohách databáze zaniknou nejpozději do 30 dnů.</li>
+<li>Záznamy o moderaci, které jsou potřebné k ochraně práv a bezpečnosti, můžeme uchovat i po smazání účtu, ale bez vazby na tvůj účet.</li>
+<li>E-mailovou komunikaci uchováváme po dobu nezbytnou k jejímu vyřízení a k doložení vyřízení žádosti.</li>
+<li>Technické záznamy a údaje u samostatných správců se řídí jejich zásadami. OpenMeteo uvádí mazání svých záznamů po 90 dnech.</li>
+</ul>
+
+<h2 id="smazani-uctu">12. Smazání účtu a dat</h2>
+<p><strong>Účet v aplikaci Houbař a všechny údaje s ním spojené smažeš takto:</strong></p>
+<ol>
+<li>Napiš na <a href="mailto:houbarapp@seznam.cz?subject=Smaz%C3%A1n%C3%AD%20%C3%BA%C4%8Dtu%20Houba%C5%99">houbarapp@seznam.cz</a> s předmětem „Smazání účtu Houbař“, a to z e-mailu, se kterým máš účet spojený.</li>
+<li>Pokud jsi účet založil přes přihlašovací jméno, uveď ho ve zprávě. Může se stát, že tě požádáme o další ověření, abychom nesmazali cizí účet.</li>
+<li>Účet smažeme nejpozději do jednoho měsíce a potvrdíme ti to.</li>
+</ol>
+<p><strong>Co se smaže:</strong> účet, profil, profilová fotka, hlášení, příspěvky, fotky, komentáře, reakce, recepty, body, výsledky kvízů, fotky ve sbírce a jejich otisky, souhlasy a tokeny zařízení.</p>
+<p><strong>Co může zůstat:</strong> kopie v zálohách nejdéle 30 dnů a záznamy o moderaci bez vazby na tvůj účet (viz část 11). Deník v telefonu smažeš odinstalováním aplikace.</p>
+<p>Účet hosta nemá e-mail, podle kterého bychom tě mohli ověřit. Pokud chceš smazat údaje hosta, napiš nám a domluvíme se, jak účet spolehlivě určit.</p>
+
+<h2 id="prava">13. Tvoje práva</h2>
+<ul>
+<li>Máš právo na přístup k údajům, jejich opravu a výmaz, omezení zpracování a přenositelnost.</li>
+<li><strong>Máš právo vznést námitku</strong> proti zpracování založenému na oprávněném zájmu.</li>
+<li>Souhlas můžeš kdykoli odvolat. Odvolání je stejně snadné jako udělení a nemá vliv na dřívější zpracování.</li>
+<li>Žádost pošli na <a href="mailto:houbarapp@seznam.cz">houbarapp@seznam.cz</a>. Odpovíme bez zbytečného odkladu, nejpozději do jednoho měsíce. Ve složitých případech lze lhůtu prodloužit, dáme ti vědět.</li>
+<li>Máš právo podat stížnost u dozorového úřadu, kterým je <a href="https://uoou.gov.cz/">Úřad pro ochranu osobních údajů</a>, Pplk. Sochora 27, 170 00 Praha 7.</li>
+</ul>
+
+<h2 id="zabezpeceni">14. Zabezpečení</h2>
+<p>Komunikace se servery je šifrovaná. Pravidla přístupu v databázi omezují, co může který uživatel číst. Přístup ke správě aplikace vyžaduje dvoufázové ověření. Žádný systém však není zcela bezpečný. Pokud dojde k úniku, který ohrožuje tvoje práva, budeme postupovat podle GDPR a informujeme úřad i tebe.</p>
+
+<h2 id="deti">15. Věková hranice</h2>
+<p>Aplikace je určena osobám od 16 let. Vědomě neshromažďujeme údaje mladších osob. Pokud zjistíme, že jsme je získali, smažeme je. Pokud máš za to, že nám údaje poskytlo dítě, napiš nám.</p>
+
+<h2 id="automaticky">16. Automatizované zpracování</h2>
+<p>Poznávač navrhuje druh houby automaticky. Jde o orientační tip, který nemá právní ani obdobně významné účinky. Body a žebříček počítá aplikace automaticky podle pravidel. O uživatelích nerozhodujeme výhradně automatizovaně ve smyslu čl. 22 GDPR.</p>
+
+<h2 id="zmeny">17. Změny zásad</h2>
+<p>Zásady můžeme aktualizovat, například při změně funkcí nebo poskytovatelů. Vždy uvedeme nové datum účinnosti. O podstatné změně tě upozorníme v aplikaci. Pokud bude změna vyžadovat nový souhlas, vyžádáme si ho.</p>
+<p>Dotazy: <a href="mailto:houbarapp@seznam.cz">houbarapp@seznam.cz</a></p>
+</main>
+</body>
+</html>
