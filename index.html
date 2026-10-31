@@ -44,6 +44,7 @@
 <li>Na server se posílá jen oblast o velikosti zhruba 36 km², nikdy souřadnice.</li>
 <li>Ostatní vidí jen to, co sám sdílíš, a souhrny za oblast. Tvoje jednotlivá hlášení neuvidí.</li>
 <li>Fotky pro Poznávač zpracujeme jen s tvým souhlasem a slouží i ke zlepšování rozpoznávání hub.</li>
+<li>Po smazání účtu se smažou tvoje údaje. Příspěvky v komunitě ale zůstanou anonymně.</li>
 <li>Osobní údaje neprodáváme. Aplikace nepoužívá analytické nástroje.</li>
 <li>Běžným uživatelům může aplikace zobrazovat reklamy od Googlu. Personalizované jsou jen s tvým souhlasem.</li>
 </ul>
@@ -81,7 +82,7 @@
 <table>
 <thead><tr><th>Údaje</th><th>Účel</th><th>Právní základ</th></tr></thead>
 <tbody>
-<tr><td><strong>Účet:</strong> e-mail nebo přihlašovací jméno, otisk hesla. Při přihlášení přes Google nebo Apple e-mail a identifikátor účtu. Host bez registrace má anonymní účet bez e-mailu.</td><td>Přihlášení, obnova hesla, přenos dat mezi zařízeními.</td><td>Plnění smlouvy, čl. 6 odst. 1 písm. b) GDPR</td></tr>
+<tr><td><strong>Účet:</strong> e-mail nebo přihlašovací jméno, otisk hesla. Při přihlášení přes Google, Apple nebo Facebook e-mail a identifikátor účtu u poskytovatele. Poskytovatel může poslat i jméno a adresu profilové fotky, ty se uloží u účtu, ale aplikace je nepoužívá. Host bez registrace má anonymní účet bez e-mailu.</td><td>Přihlášení, obnova hesla, přenos dat mezi zařízeními.</td><td>Plnění smlouvy, čl. 6 odst. 1 písm. b) GDPR</td></tr>
 <tr><td><strong>Profil:</strong> přezdívka, avatar nebo vlastní profilová fotka, barva, pozadí, úroveň, nastavení viditelnosti.</td><td>Vystupování v komunitě a v žebříčku.</td><td>Plnění smlouvy</td></tr>
 <tr><td><strong>Hlášení z lesa:</strong> oblast zhruba 36 km², den, stav (rostlo, slabě, nerostlo).</td><td>Komunitní přehled růstu hub.</td><td>Plnění smlouvy</td></tr>
 <tr><td><strong>Houbaři kolem mě:</strong> oblast zhruba 36 km² a čas posledního signálu.</td><td>Zobrazení počtu houbařů v oblasti a upozornění.</td><td>Souhlas, čl. 6 odst. 1 písm. a) GDPR</td></tr>
@@ -154,6 +155,7 @@
 <tr><td><a href="https://www.hetzner.com/legal/privacy-policy/">Hetzner Online GmbH</a></td><td>Zpracovatel: server s modelem pro rozpoznávání hub</td><td>Fotky posílané k rozpoznání</td><td>Německo</td></tr>
 <tr><td><a href="https://expo.dev/privacy">Expo (650 Industries, Inc.)</a></td><td>Zpracovatel: doručení upozornění a aktualizace aplikace</td><td>Push token, text upozornění, IP adresa, verze aplikace</td><td>USA</td></tr>
 <tr><td><a href="https://policies.google.com/privacy">Google</a></td><td>Samostatný správce: Google Maps, přihlášení přes Google, reklamy AdMob, doručování upozornění, obchod Google Play</td><td>Podle služby: technické údaje zařízení, IP adresa, oblast zobrazené mapy, identifikátory, údaje o nákupu</td><td>Irsko a USA</td></tr>
+<tr><td><a href="https://www.facebook.com/privacy/policy/">Meta Platforms Ireland Limited (Facebook)</a></td><td>Samostatný správce: přihlášení přes Facebook</td><td>Údaje o přihlášení, IP adresa, e-mail a identifikátor účtu předané aplikaci. Meta se dozví, že ses do aplikace přihlásil</td><td>Irsko a USA</td></tr>
 <tr><td><a href="https://www.apple.com/legal/privacy/">Apple</a></td><td>Samostatný správce: přihlášení přes Apple, doručování upozornění, App Store</td><td>Identifikátory, technické údaje, údaje o nákupu</td><td>Irsko a USA</td></tr>
 <tr><td><a href="https://open-meteo.com/en/terms">OpenMeteo GmbH</a></td><td>Samostatný správce: předpověď počasí</td><td>IP adresa a dotaz na pevné body krajů, ne tvoje poloha</td><td>Švýcarsko, servery v Evropě a Severní Americe</td></tr>
 <tr><td>Český hydrometeorologický ústav</td><td>Samostatný správce: mapa pravděpodobnosti růstu hub</td><td>IP adresa a technické údaje požadavku</td><td>Česká republika</td></tr>
@@ -165,7 +167,7 @@
 <h2 id="mimo-eu">10. Předávání mimo EU</h2>
 <p>Pokud se údaje dostanou mimo Evropský hospodářský prostor, děje se tak na těchto základech:</p>
 <ul>
-<li><strong>Google a Expo:</strong> rámec EU-US Data Privacy Framework, u poskytovatelů, kteří jsou v něm certifikovaní, a standardní smluvní doložky podle jejich podmínek.</li>
+<li><strong>Google, Meta a Expo:</strong> rámec EU-US Data Privacy Framework, u poskytovatelů, kteří jsou v něm certifikovaní, a standardní smluvní doložky podle jejich podmínek.</li>
 <li><strong>Supabase:</strong> standardní smluvní doložky v jeho smlouvě o zpracování údajů. Databáze je v Irsku, ale poskytovatel může v omezeném rozsahu zpracovávat některé údaje mimo tento region, například při podpoře, a to i v Singapuru a USA.</li>
 <li><strong>Švýcarsko:</strong> rozhodnutí Evropské komise o odpovídající ochraně.</li>
 </ul>
@@ -176,7 +178,7 @@
 <li>Údaje navázané na účet uchováváme po dobu existence účtu, nebo dokud je nesmažeš.</li>
 <li>Záznam funkce Houbaři kolem mě mažeme průběžně po 3 hodinách od posledního signálu, případně hned po vypnutí funkce.</li>
 <li>Fotky ve sbírce a údaje založené na souhlasu uchováváme do odvolání souhlasu a vyřízení žádosti o smazání, nebo do smazání účtu.</li>
-<li>Po smazání účtu mizí jeho data z provozní databáze a úložiště. Kopie v zálohách databáze zaniknou nejpozději do 30 dnů.</li>
+<li>Po smazání účtu mizí jeho data z provozní databáze a úložiště, kromě příspěvků v komunitě, které zůstávají anonymně (viz část 12). Kopie v zálohách databáze zaniknou nejpozději do 30 dnů.</li>
 <li>Záznamy o moderaci, které jsou potřebné k ochraně práv a bezpečnosti, můžeme uchovat i po smazání účtu, ale bez vazby na tvůj účet.</li>
 <li>E-mailovou komunikaci uchováváme po dobu nezbytnou k jejímu vyřízení a k doložení vyřízení žádosti.</li>
 <li>Technické záznamy a údaje u samostatných správců se řídí jejich zásadami. OpenMeteo uvádí mazání svých záznamů po 90 dnech.</li>
@@ -189,8 +191,14 @@
 <li>Pokud jsi účet založil přes přihlašovací jméno, uveď ho ve zprávě. Může se stát, že tě požádáme o další ověření, abychom nesmazali cizí účet.</li>
 <li>Účet smažeme nejpozději do jednoho měsíce a potvrdíme ti to.</li>
 </ol>
-<p><strong>Co se smaže:</strong> účet, profil, profilová fotka, hlášení, příspěvky, fotky, komentáře, reakce, recepty, body, výsledky kvízů, fotky ve sbírce a jejich otisky, souhlasy a tokeny zařízení.</p>
-<p><strong>Co může zůstat:</strong> kopie v zálohách nejdéle 30 dnů a záznamy o moderaci bez vazby na tvůj účet (viz část 11). Deník v telefonu smažeš odinstalováním aplikace.</p>
+<p><strong>Co se smaže:</strong> účet, profil, profilová fotka, hlášení, komentáře, reakce, recepty a jejich fotky, body, výsledky kvízů, fotky ve sbírce a jejich otisky, fotky nálezů, souhlasy a tokeny zařízení.</p>
+<p><strong>Co zůstane:</strong></p>
+<ul>
+<li><strong>Příspěvky v komunitě</strong> (text, štítek, fotky a oblast příspěvku). Zůstanou jako anonymní obsah komunity, aby nezmizely diskuse ostatních. Při smazání účtu se zruší vazba na tvůj účet, přezdívka se změní na „Smazaný účet“ a odstraní se avatar. Pak už je nikdo nespojí s tebou a nezpracováváme je jako tvoje osobní údaje.</li>
+<li>Kopie v zálohách nejdéle 30 dnů a záznamy o moderaci bez vazby na tvůj účet (viz část 11).</li>
+</ul>
+<p><strong>Nechceš, aby příspěvky zůstaly?</strong> Smaž je před žádostí o smazání účtu přímo v aplikaci u příspěvku. Po smazání účtu už je k tobě nelze přiřadit. Pokud příspěvek i tak obsahuje údaje, podle kterých tě lze poznat, napiš nám a smažeme ho.</p>
+<p>Deník v telefonu smažeš odinstalováním aplikace.</p>
 <p>Účet hosta nemá e-mail, podle kterého bychom tě mohli ověřit. Pokud chceš smazat údaje hosta, napiš nám a domluvíme se, jak účet spolehlivě určit.</p>
 
 <h2 id="prava">13. Tvoje práva</h2>
